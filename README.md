@@ -30,7 +30,10 @@ logsight.ai infuses deep learning and AI-powered analytics to enable continuous 
 
 The issue will look like as similar to:
 
-![View accounts](./issue.png)
+![Issue](./issue.png)
+
+The detailed online report shows the overview and the state analysis as in:
+![Report](./report.png)
 
 
 
