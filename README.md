@@ -25,10 +25,11 @@ The repository contains [main.yml](https://github.com/aiops/hello-logsight/blob/
    1. `Name`: **LOGSIGHT_USERNAME** should have `Value` of your logsight.ai username
    2. `Value`: **LOGSIGHT_PASSWORD** should have `Value` of your logsight.ai password
    3. Make sure you use the exact same `Names`
-4. The repository contains two **pull requests** named **Baseline** and **Candidate** you can check them out at https://github.com/aiops/hello-logsight/pulls
-5. Merge the **Baseline** pull request into `main` by clicking on the **Baseline** request and clicking on **Merge pull request** => **Confirm Merge**
-6. Merge the **Candidate** pull request into `main` by clicking on the **Candidate** request and clicking on **Merge pull request** => **Confirm Merge**
-7. The Stage Verifier GitHub Actions 
-8. In the end, the workflow creates a report that specifies the **deployment risk**
+4. The repository contains two **branches** named **baseline** and **candidate**. Go to https://github.com/aiops/hello-logsight/pulls and click on **New pull request**
+5. Select **Base repository** to your_github_user/hello-logsight => **base** `main` ==> **compare** `baseline`
+6. **Create pull request** and merge the **Baseline** by clicking on **Merge pull request** => **Confirm Merge**
+7. Repeat steps 5 and 6 for  the **candidate** branch.
+8. The workflow executes automatically 
+9. In the end, the workflow creates an issue report that specifies the **deployment risk**. You can check this in the repository **Issues**.
 
-Continue reading at the [Docs.](https://docs.logsight.ai/#/monitor_deployments/github_action)
+The hello-logsight example ends here. You can get more in-depth knowledge about the actions and how to use them at the [Docs.](https://docs.logsight.ai/#/monitor_deployments/github_action)
