@@ -30,4 +30,4 @@ The repository contains [main.yml](https://github.com/aiops/hello-logsight/blob/
 6. The Stage Verifier GitHub Actions 
 7. In the end, the workflow creates a report that specifies the **deployment risk**
 
-Continue reading at https://docs.logsight.ai/#/monitor_deployments/github_action
+Continue reading at the [Docs.](https://docs.logsight.ai/#/monitor_deployments/github_action)
