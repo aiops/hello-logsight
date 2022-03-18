@@ -6,7 +6,7 @@ logsight.ai infuses deep learning and AI-powered analytics to enable continuous 
 
 
 
-# Hello logsight.ai
+# Hello logsight.ai from Github Actions
 This repository illustrates the [logsight.ai Stage Verifier](https://docs.logsight.ai/#/monitor_deployments/stage_verifier) via GitHub Actions.
 
 The repository contains [main.yml](https://github.com/aiops/hello-logsight/blob/main/.github/workflows/main.yml) workflow that:
