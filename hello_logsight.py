@@ -6,7 +6,7 @@ stdout_handler = logging.StreamHandler(sys.stdout)
 handlers = [file_handler, stdout_handler]
 logging.basicConfig(level=logging.DEBUG, format='%(message)s', handlers=handlers)
 
-HEARTBEAT = False  # SET HEARTBEAT TO FALSE, COMMIT and PUSH
+HEARTBEAT = True  # SET HEARTBEAT TO FALSE, COMMIT and PUSH
 EXTERNAL = True
 
 

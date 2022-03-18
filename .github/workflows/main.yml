@@ -40,4 +40,4 @@ jobs:
           application_id: ${{ steps.setup.outputs.application_id }}
           baseline_tag: ${{ github.event.before }}
           candidate_tag: ${{ github.sha }}
-          risk_threshold: 0
+          risk_threshold: 10
