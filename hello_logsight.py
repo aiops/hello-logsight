@@ -13,6 +13,7 @@ EXTERNAL = True
 def enable_external_services(username):
     if HEARTBEAT:
         logging.info("External services are available and can be initialized.")
+        logging.info("External services can be used now")
     else:
         raise Exception
 
