@@ -28,14 +28,6 @@ logsight.ai infuses deep learning and AI-powered analytics to enable continuous 
 9. You can monitor the workflow in the **Actions** tab.
 10. After few minutes, it will end with creating an issue report that specifies the **deployment risk**. You can check the report in the repository **Issues**.
 
-#### Details
-This repository illustrates the [logsight.ai Stage Verifier](https://docs.logsight.ai/#/monitor_deployments/stage_verifier) via GitHub Actions.
-
-The repository contains [main.yml](https://github.com/aiops/hello-logsight/blob/main/.github/workflows/main.yml) workflow that:
-1. Set ups connection to logsight.ai
-2. Executes the [hello-logsight.py](https://github.com/aiops/hello-logsight/blob/main/hello_logsight.py) application, which generates logs
-3. Verifies the logs from the new deployment in comparison to the previous one
-
 
 The hello-logsight example ends here. You can get more in-depth knowledge about the actions and how to use them at the [Docs.](https://docs.logsight.ai/#/monitor_deployments/github_action)
 
