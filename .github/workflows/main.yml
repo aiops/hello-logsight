@@ -1,5 +1,6 @@
 name: 'Stage Verifier'
 on:
+  pull-request:
   push:
     branches:
       - main
