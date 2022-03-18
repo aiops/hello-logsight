@@ -1,4 +1,4 @@
-name: 'Continuous Verification logs'
+name: 'Stage Verifier'
 on:
   push:
     branches:
