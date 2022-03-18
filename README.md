@@ -28,6 +28,12 @@ logsight.ai infuses deep learning and AI-powered analytics to enable continuous 
 9. You can monitor the workflow in the **Actions** tab.
 10. After few minutes, it will end with creating an issue report that specifies the **deployment risk**. You can check the report in the repository **Issues**.
 
+The issue will look like as similar to:
+
+![View accounts](./issue.png)
+
+
+
 
 The hello-logsight example ends here. You can get more in-depth knowledge about the actions and how to use them at the [Docs.](https://docs.logsight.ai/#/monitor_deployments/github_action)
 
