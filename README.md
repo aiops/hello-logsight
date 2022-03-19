@@ -1,6 +1,6 @@
 <a href="https://logsight.ai/"><img src="https://logsight.ai/assets/img/logol.png" width="150"/></a>
 
-# Hello logsight.ai from Github Actions
+# Hello logsight.ai from GitHub Actions
 
 ### Steps
 1. **Fork** the repository 
