@@ -2,6 +2,7 @@
 
 # Hello logsight.ai from GitHub Actions
 
+The following illustrates an example of using logsight.ai [Stage Verifier.](https://docs.logsight.ai/#/monitor_deployments/stage_verifier)
 ### Steps
 1. [Open tutorial in extra browser page](https://docs.logsight.ai/#/monitor_deployments/github_action)
 2. **Fork** the repository 
