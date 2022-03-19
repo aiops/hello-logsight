@@ -27,6 +27,11 @@ jobs:
       - name: Run Hello Logsight
         run: python hello_logsight.py
 
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.pull_request.base.sha }}
+
       - name: Verify Logs
         uses: aiops/logsight-verification-action@main
         id: verify-logs
@@ -35,6 +40,6 @@ jobs:
           username: ${{ secrets.LOGSIGHT_USERNAME }}
           password: ${{ secrets.LOGSIGHT_PASSWORD }}
           application_id: ${{ steps.setup.outputs.application_id }}
-          baseline_tag: ${{ github.event.pull_request.head.sha }}
+          baseline_tag: ${{ github.event.pull_request.base.sha }}
           candidate_tag: ${{ github.event.pull_request.head.sha }}
           risk_threshold: 10
