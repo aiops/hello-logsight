@@ -20,7 +20,7 @@ jobs:
           application_name: ${{ github.repository }}
           fluentbit_filelocation: /host$GITHUB_WORKSPACE/*.log
           fluentbit_message: 'log'
-          tag: ${{ github.event.pull_request.head.sha }}
+          tag: ${{ github.event.pull_request.sha }}
 
       - name: Set up Python 3.9.6
         uses: actions/setup-python@v2
