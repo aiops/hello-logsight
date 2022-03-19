@@ -1,7 +1,8 @@
 name: 'Stage Verifier'
 on:
-  pull_request_target:
-    types: [assigned, opened, synchronize, reopened]
+  push:
+    branches:
+      - main
 
 jobs:
   check_deploy_test_verify:
@@ -20,7 +21,7 @@ jobs:
           application_name: ${{ github.repository }}
           fluentbit_filelocation: /host$GITHUB_WORKSPACE/*.log
           fluentbit_message: 'log'
-          tag: ${{ github.event.pull_request.head.sha }}
+          tag: ${{ github.sha }}
 
       - name: Set up Python 3.9.6
         uses: actions/setup-python@v2
@@ -38,6 +39,6 @@ jobs:
           username: ${{ secrets.LOGSIGHT_USERNAME }}
           password: ${{ secrets.LOGSIGHT_PASSWORD }}
           application_id: ${{ steps.setup.outputs.application_id }}
-          baseline_tag: ${{ github.sha }}
-          candidate_tag: ${{ github.event.pull_request.head.sha }}
+          baseline_tag: ${{ github.event.before }}
+          candidate_tag: ${{ github.sha }}
           risk_threshold: 10
