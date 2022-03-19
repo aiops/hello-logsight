@@ -1,7 +1,7 @@
 name: 'Stage Verifier'
 on:
-  pull_request:
-    types: [opened, reopened]
+  pull_request_target:
+    types: [assigned, opened, synchronize, reopened]
   push:
     branches:
       - main
