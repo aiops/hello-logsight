@@ -20,7 +20,7 @@ jobs:
         with:
           username: ${{ secrets.LOGSIGHT_USERNAME }}
           password: ${{ secrets.LOGSIGHT_PASSWORD }}
-          application_name: ${{ github.ref }}
+          application_name: ${{ github.repository }}
           fluentbit_filelocation: /host$GITHUB_WORKSPACE/*.log
           fluentbit_message: 'log'
           tag: ${{ github.event.pull_request.base.sha }}
