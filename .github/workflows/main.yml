@@ -23,6 +23,7 @@ jobs:
           application_name: ${{ github.ref }}
           fluentbit_filelocation: /host$GITHUB_WORKSPACE/*.log
           fluentbit_message: 'log'
+          tag: ${{ github.event.pull_request.head.sha }}
 
       - name: Set up Python 3.9.6
         uses: actions/setup-python@v2
@@ -40,6 +41,6 @@ jobs:
           username: ${{ secrets.LOGSIGHT_USERNAME }}
           password: ${{ secrets.LOGSIGHT_PASSWORD }}
           application_id: ${{ steps.setup.outputs.application_id }}
-          baseline_tag: ${{ github.event.before }}
-          candidate_tag: ${{ github.sha }}
+          baseline_tag: ${{ github.event.pull_request.head.event.before }}
+          candidate_tag: ${{ github.event.pull_request.head.sha }}
           risk_threshold: 10
