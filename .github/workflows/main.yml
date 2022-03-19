@@ -8,9 +8,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-      - name: Checkout main branch
-        uses: actions/checkout@v2
-
       - name: Logsight Setup
         uses: aiops/logsight-setup-action@main
         id: setup
@@ -20,7 +17,7 @@ jobs:
           application_name: ${{ github.repository }}
           fluentbit_filelocation: /host$GITHUB_WORKSPACE/*.log
           fluentbit_message: 'log'
-          tag: ${{ github.event.pull_request.sha }}
+          tag: ${{ github.event.pull_request.head.sha }}
 
       - name: Set up Python 3.9.6
         uses: actions/setup-python@v2
@@ -38,6 +35,6 @@ jobs:
           username: ${{ secrets.LOGSIGHT_USERNAME }}
           password: ${{ secrets.LOGSIGHT_PASSWORD }}
           application_id: ${{ steps.setup.outputs.application_id }}
-          baseline_tag: ${{ github.sha }}
+          baseline_tag: ${{ github.event.pull_request.head.sha }}
           candidate_tag: ${{ github.event.pull_request.head.sha }}
           risk_threshold: 10
