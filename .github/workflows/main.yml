@@ -27,11 +27,6 @@ jobs:
       - name: Run Hello Logsight
         run: python hello_logsight.py
 
-      - name: Checkout
-        uses: actions/checkout@v2
-        with:
-          ref: ${{ github.event.pull_request.base.sha }}
-
       - name: Verify Logs
         uses: aiops/logsight-verification-action@main
         id: verify-logs
