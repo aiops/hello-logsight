@@ -6,7 +6,7 @@
 1. **Fork** the repository 
 2. Go to **Pull Requests** and click on **New pull request**
 3. Set `compare` to `base` and **Create pull request**. The quality check will run.
-4. You can try the same with opening another Pull Request, now by setting `compare` to `candidate` and **Create Pull Request**. The quality check will run.
+4. Try the same by going in your **Forked repository** and open another Pull Request, now by setting `compare` to `candidate` and **Create Pull Request**. The quality check will run.
 ![Issue](./check.png)
 5. After few minutes, if the check is not passing, it will create an issue report that specifies the **deployment risk**. You can check the report in the **Issues**.
 
