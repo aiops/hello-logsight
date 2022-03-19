@@ -10,6 +10,8 @@
 ![Issue](./check.png)
 5. After few minutes, if the check is not passing, it will create an issue report that specifies the **deployment risk**. You can check the report in the **Issues**.
 
+### Output
+
 The issue will look like as similar to:
 
 ![Issue](./issue.png)
