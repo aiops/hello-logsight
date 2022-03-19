@@ -41,6 +41,6 @@ jobs:
           username: ${{ secrets.LOGSIGHT_USERNAME }}
           password: ${{ secrets.LOGSIGHT_PASSWORD }}
           application_id: ${{ steps.setup.outputs.application_id }}
-          baseline_tag: ${{ github.event.pull_request.head.event.before }}
+          baseline_tag: ${{ github.event.pull_request.base.sha }}
           candidate_tag: ${{ github.event.pull_request.head.sha }}
           risk_threshold: 10
