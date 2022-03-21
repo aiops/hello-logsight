@@ -6,7 +6,7 @@
 The following illustrates an example of using logsight.ai [Stage Verifier.](https://docs.logsight.ai/#/monitor_deployments/stage_verifier)
 
 ## Use Case
-<div align=center><img src="assets/use_case.png" alt="drawing" style="width:80%;"/> </div>
+<div align=center><img src="assets/use_case.png" alt="drawing" style="width:40%;"/> </div>
 
 [Open tutorial in extra browser page](https://docs.logsight.ai/#/monitor_deployments/github_action)
 
