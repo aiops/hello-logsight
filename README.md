@@ -22,7 +22,6 @@ We use the [Stage Verifier](https://docs.logsight.ai/#/stage_verification/overvi
 + Since the risk is high, the merge is automatically cancelled and a [GitHub Issue](https://docs.github.com/en/issues) is created
 
 
-
 ## For the impatient
 
 The try the simplicity and transparency of using [Logsight](https://logsight.ai), we recommend you to follow the instructions directly from our [Hello Logsight tutorial](https://docs.logsight.ai/#/integration/github_action)
@@ -31,10 +30,13 @@ The try the simplicity and transparency of using [Logsight](https://logsight.ai)
 1. **Fork** the [hello-logsight](https://github.com/aiops/hello-logsight) repository 
 <div align=center><img src="assets/fork.png" alt="drawing" style="width:40%;"/> </div>
 
-2. Go to **Pull Requests** and click on **New pull request**
-<div align=center><img src="assets/pull_requests.png" alt="drawing" style="width:40%;"/> </div>
+2. Go to **Pull Requests** and create a **New pull request**
+<div align=center><img src="assets/pull_requests.png" alt="drawing" style="width:80%;"/> </div>
 
-3. Set `compare` to `candidate` and **Create pull request**.
+3. In the **compare** drop-down list, set `compare: candidate`
+<div align=center><img src="assets/pullrq.png" alt="drawing" style="width:80%;"/> </div>
+
+4. **Create pull request**
 <div align=center><img src="assets/pullrq.png" alt="drawing" style="width:80%;"/> </div>
 
 5. The **quality check will run**.
