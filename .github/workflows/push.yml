@@ -1,4 +1,4 @@
-name: 'Stage Verifier'
+name: 'Stage Verifier (Push)'
 on:
   push:
     branches:
