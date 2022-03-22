@@ -24,7 +24,7 @@ We use the [Stage Verifier](https://docs.logsight.ai/#/stage_verification/overvi
 
 ## For the impatient
 
-The try the simplicity and transparency of using [Logsight](https://logsight.ai), we recommend you to follow the instructions directly from our [Hello Logsight tutorial](https://docs.logsight.ai/#/integration/github_action)
+To try the simplicity and transparency of using [Logsight](https://logsight.ai), we recommend you to follow the instructions directly from our [Hello Logsight tutorial](https://docs.logsight.ai/#/integration/github_action)
 
 
 1. **Fork** the [hello-logsight](https://github.com/aiops/hello-logsight) repository 
