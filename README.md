@@ -13,6 +13,7 @@ The following illustrates an example of using logsight.ai [Stage Verifier.](http
 ## Steps
 1. **Fork** the repository 
 <div align=center><img src="assets/fork.png" alt="drawing" style="width:80%;"/> </div>
+
 2. Go to **Pull Requests** and click on **New pull request**
 3. Set `compare` to `candidate` and **Create pull request**.
 <div align=center><img src="assets/pullrq.png" alt="drawing" style="width:80%;"/> </div>
