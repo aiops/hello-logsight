@@ -43,22 +43,28 @@ The try the simplicity and transparency of using [Logsight](https://logsight.ai)
 <div align=center><img src="assets/check.png" alt="drawing" style="width:80%;"/> </div>
 
 6. If the verification fails:bangbang:, a report is created with the **deployment risk** at [**Issues**](https://github.com/aiops/hello-logsight/issues).
+<div align=center><img src="assets/issues.png" alt="drawing" style="width:80%;"/> </div>
 
 
-## Report in Github
+## Github Report
 
-The issue looks similar to:
-<div align=center><img src="assets/issue.png" alt="drawing" style="width:80%;"/> </div>
+The following image gives an example of a report created by the CI/CD [Stage Verifier](https://docs.logsight.ai/#/stage_verification/overview) gate:
 
-
-## Report in Logsight.ai
-
-To open the detailed online report, you need to have [logsight.ai](https://demo.logsight.ai/) user account. 
-**Login and then click** on the detailed report.
-
-The detailed online report shows the overview and the state analysis as in:
-<div align=center><img src="assets/report.png" alt="drawing" style="width:80%;"/> </div>
+<div align=center><img src="assets/issue_report.png" alt="drawing" style="width:80%;"/> </div>
 
 
-The hello-logsight example ends here. You can get more in-depth knowledge about the actions and how to use them at the [Docs.](https://docs.logsight.ai/#/monitor_deployments/github_action)
+## Logsight.ai Report
+
+You can also view a **more detailed** report of the verification using the online service.
+You need to have a [logsight.ai](https://demo.logsight.ai/) user account. 
+
+To access the report, select the **Detailed onine report** link shown in the Github Report.
+
+<div align=center><img src="assets/logsight_report.png" alt="drawing" style="width:80%;"/> </div>
+
+
+# :wave: Goodbye
+
+The hello-logsight example ends here.
+You can get more in-depth knowledge about the actions and how to use them at [docs.logsight.ai](https://docs.logsight.ai/#/integration/github_action)
 
