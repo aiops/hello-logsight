@@ -1,13 +1,13 @@
 import logging
 import sys
 
-file_handler = logging.FileHandler(filename='logs.log')
+file_handler = logging.FileHandler(filename='hello_logsight.log')
 stdout_handler = logging.StreamHandler(sys.stdout)
 handlers = [file_handler, stdout_handler]
 logging.basicConfig(level=logging.DEBUG, format='%(message)s', handlers=handlers)
 
 # Set HEARTBEAT to False => COMMIT => PUSH
-HEARTBEAT = False
+HEARTBEAT = True
 EXTERNAL = True
 
 
