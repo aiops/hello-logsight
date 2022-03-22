@@ -37,12 +37,12 @@ The try the simplicity and transparency of using [Logsight](https://logsight.ai)
 <div align=center><img src="assets/pullrq.png" alt="drawing" style="width:80%;"/> </div>
 
 4. **Create pull request**
-<div align=center><img src="assets/pullrq.png" alt="drawing" style="width:80%;"/> </div>
+<div align=center><img src="assets/create_pull_request.png" alt="drawing" style="width:80%;"/> </div>
 
-5. The **quality check will run**.
+5. The **continuous verification** gate runs
 <div align=center><img src="assets/check.png" alt="drawing" style="width:80%;"/> </div>
 
-6. If the check is failing, it will create an issue report that specifies the **deployment risk**. You can check the report in the [**Issues**](https://github.com/aiops/hello-logsight/issues).
+6. If the verification fails:bangbang:, a report is created with the **deployment risk** at [**Issues**](https://github.com/aiops/hello-logsight/issues).
 
 
 ## Report in Github
