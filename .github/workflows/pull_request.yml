@@ -4,7 +4,7 @@ on:
     types: [assigned, opened, synchronize, reopened]
 
 jobs:
-  check_deployment_risk:
+  deployment_risk:
     runs-on: ubuntu-latest
     steps:
 
