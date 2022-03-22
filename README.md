@@ -11,7 +11,6 @@ The following illustrates an example of using logsight.ai [Stage Verifier.](http
 [Open tutorial in extra browser page](https://docs.logsight.ai/#/monitor_deployments/github_action)
 
 ## Steps
-
 1. **Fork** the repository 
 <div align=center><img src="assets/fork.png" alt="drawing" style="width:80%;"/> </div>
 2. Go to **Pull Requests** and click on **New pull request**
