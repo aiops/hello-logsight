@@ -18,7 +18,7 @@ def enable_external_services(username):
         raise ConnectionError('external service unavailable')
 
 
-def hello_logsight_user(username="logsight.ai User"):
+def hello_logsight_user(username="anonymous"):
     logging.info(f"New user registered: {username}")
     logging.info(f"User {username} requests access to logsight GitHub Actions")
     logging.info(f"Enable AI-powered log analytics using CI/CD workflows")
