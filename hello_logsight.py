@@ -6,38 +6,38 @@ stdout_handler = logging.StreamHandler(sys.stdout)
 handlers = [file_handler, stdout_handler]
 logging.basicConfig(level=logging.DEBUG, format='%(message)s', handlers=handlers)
 
-HEARTBEAT = True  # SET HEARTBEAT TO False => COMMIT => PUSH
+# Set HEARTBEAT to False => COMMIT => PUSH
+HEARTBEAT = False
 EXTERNAL = True
 
 
 def enable_external_services(username):
     if HEARTBEAT:
-        logging.info("External services are available and can be initialized.")
+        logging.info(f"External services are available for user: {username}")
     else:
-        raise Exception
+        raise ConnectionError('external service unavailable')
 
 
 def hello_logsight_user(username="logsight.ai User"):
-    logging.info(f"A new logsight.ai user with username: {username} is registered")
-    logging.info(f"{username} wants to use logsight GitHub Actions")
-    logging.info(f"This will enable him to provide AI-powered log analytics in his own workflows")
-    logging.info(f"First let's create a user and write it to the database")
+    logging.info(f"New user registered: {username}")
+    logging.info(f"User {username} requests access to logsight GitHub Actions")
+    logging.info(f"Enable AI-powered log analytics using CI/CD workflows")
+    logging.info(f"Creating new user")
 
     with open("database.txt", "w") as db:
-        logging.info("Writing to the database")
-        # Writing data to a file
-        db.write(username + "\n")
-        logging.info("Finished writing into the database")
+        logging.info("Writing transaction to database")
+        db.write(username)
+        logging.info("Transaction completed")
 
-    logging.info(f"User with username: {username} was successfully added to the database")
+    logging.info(f"User successfully added to database: {username}")
 
     if EXTERNAL:
         try:
-            logging.info(f"Trying to connect to external services for user {username}")
+            logging.info(f"Connecting to external services for user: {username}")
             enable_external_services(username)
-        except Exception as e:
-            logging.info("Connection failure from external service because of timeout")
+        except ConnectionError as e:
+            logging.info("Connection failed due to timeout: %s", str(e))
 
 
 if __name__ == '__main__':
-    hello_logsight_user("logsight")
+    hello_logsight_user("john_miller")
