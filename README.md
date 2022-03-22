@@ -45,6 +45,10 @@ To try the simplicity and transparency of using [Logsight](https://logsight.ai),
 6. If the verification fails:bangbang:, a report is created with the **deployment risk** at [**Issues**](https://github.com/aiops/hello-logsight/issues).
 <div align=center><img src="assets/issues.png" alt="drawing" style="width:80%;"/> </div>
 
+6. If the verification fails:bangbang:, a report is created with the **deployment risk**.
+The report is available under GitHub [**Issues**](https://github.com/aiops/hello-logsight/issues).
+<div align=center><img src="assets/issues.png" alt="drawing" style="width:80%;"/> </div>
+
 
 ## Github Report
 
