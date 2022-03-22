@@ -3,7 +3,7 @@
 
 # Hello logsight.ai from GitHub Actions
 
-The following illustrates an example of using logsight.ai [Stage Verifier.](https://docs.logsight.ai/#/monitor_deployments/stage_verifier)
+The following illustrates an example of using logsight.ai [Stage Verifier](https://docs.logsight.ai/#/monitor_deployments/stage_verifier)
 
 ## Use Case
 
