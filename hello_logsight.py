@@ -36,7 +36,7 @@ def hello_logsight_user(username="anonymous"):
             logging.info(f"Connecting to external services for user: {username}")
             enable_external_services(username)
         except ConnectionError as e:
-            logging.info("Connection failed due to timeout: %s", str(e))
+            logging.info("Connection failure from external service because of timeout")
 
 
 if __name__ == '__main__':
