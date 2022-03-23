@@ -7,7 +7,7 @@ handlers = [file_handler, stdout_handler]
 logging.basicConfig(level=logging.DEBUG, format='%(message)s', handlers=handlers)
 
 # Set HEARTBEAT to False => COMMIT => PUSH
-HEARTBEAT = False
+HEARTBEAT = True
 EXTERNAL = True
 
 
