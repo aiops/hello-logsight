@@ -50,8 +50,8 @@ The report is available under GitHub [**Issues**](https://github.com/aiops/hello
 7. In the detailed report you will see the log lines that are probable cause for the problem. You can fix the problem with the `candidate` branch: 
    1. Set `HEARTBEAT=True` in the `hello_logsight.py` in your forked repository
    2. **Commit** and check your already open pull request. The quality check will run again and this time will pass
-<div align=center><img src="assets/fix_branch.png" alt="drawing" style="width:80%;"/> </div>
    3. If you wish, you can open `hello_logsight.py` and understand where it was failing
+<div align=center><img src="assets/fix_branch.png" alt="drawing" style="width:80%;"/> </div>
 
 ## Github Report
 
