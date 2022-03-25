@@ -24,6 +24,11 @@ jobs:
           fluentbit_message: 'log'
           tag: ${{ github.event.pull_request.head.sha }}
 
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          ref: "refs/pull/${{ github.event.number }}/merge"
+
       - name: Run Hello Logsight
         run: python hello_logsight.py
 
