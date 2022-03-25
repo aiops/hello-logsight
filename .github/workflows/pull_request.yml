@@ -8,6 +8,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          ref: "refs/pull/${{ github.event.number }}/merge"
+
       - name: Logsight Setup
         uses: aiops/logsight-setup-action@v1.0.0
         id: setup
@@ -18,11 +23,6 @@ jobs:
           fluentbit_filelocation: /host$GITHUB_WORKSPACE/*.log
           fluentbit_message: 'log'
           tag: ${{ github.event.pull_request.head.sha }}
-
-      - name: Checkout code
-        uses: actions/checkout@v2
-        with:
-          ref: "refs/pull/${{ github.event.number }}/merge"
 
       - name: Run Hello Logsight
         run: python hello_logsight.py
