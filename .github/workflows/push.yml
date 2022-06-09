@@ -2,7 +2,7 @@ name: 'Stage Verifier (Push)'
 on:
   push:
     branches:
-      - '*'
+      - main
 
 jobs:
   deployment_risk:
