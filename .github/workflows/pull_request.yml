@@ -19,7 +19,7 @@ jobs:
         with:
           username: ${{ secrets.LOGSIGHT_USERNAME }}
           password: ${{ secrets.LOGSIGHT_PASSWORD }}
-          repository: ${{ github.event.repository.name }}
+          application_name: ${{ github.event.repository.name }}
           fluentbit_filelocation: /host$GITHUB_WORKSPACE/*.log
           fluentbit_message: 'log'
           tag: ${{ github.event.pull_request.head.sha }}
@@ -40,7 +40,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           username: ${{ secrets.LOGSIGHT_USERNAME }}
           password: ${{ secrets.LOGSIGHT_PASSWORD }}
-          repository: ${{ steps.setup.outputs.repository }}
+          application_name: ${{ steps.setup.outputs.application_name }}
           baseline_tag: ${{ github.event.pull_request.base.sha }}
           candidate_tag: ${{ github.event.pull_request.head.sha }}
           risk_threshold: 10
