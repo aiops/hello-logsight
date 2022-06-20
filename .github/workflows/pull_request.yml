@@ -34,7 +34,7 @@ jobs:
 
       - uses: actions/checkout@v2
       - name: Verify Logs
-        uses: aiops/logsight-verification-action@v1.2.0
+        uses: aiops/logsight-verification-action@v1.2.1
         id: verify-logs
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
