@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Logsight Setup
-        uses: aiops/logsight-setup-action@v1.1.0
+        uses: aiops/logsight-setup-action@v1.2.0
         id: setup
         with:
           username: ${{ secrets.LOGSIGHT_USERNAME }}
