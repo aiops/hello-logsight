@@ -14,12 +14,12 @@ jobs:
           ref: "refs/pull/${{ github.event.number }}/merge"
 
       - name: Logsight Setup
-        uses: aiops/logsight-setup-action@v1.1.0
+        uses: aiops/logsight-setup-action@v1.2.0
         id: setup
         with:
           username: ${{ secrets.LOGSIGHT_USERNAME }}
           password: ${{ secrets.LOGSIGHT_PASSWORD }}
-          application_name: ${{ github.event.repository.name }}
+          repository: ${{ github.event.repository.name }}
           fluentbit_filelocation: /host$GITHUB_WORKSPACE/*.log
           fluentbit_message: 'log'
           tag: ${{ github.event.pull_request.head.sha }}
@@ -34,13 +34,13 @@ jobs:
 
       - uses: actions/checkout@v2
       - name: Verify Logs
-        uses: aiops/logsight-verification-action@v1.1.0
+        uses: aiops/logsight-verification-action@v1.2.0
         id: verify-logs
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           username: ${{ secrets.LOGSIGHT_USERNAME }}
           password: ${{ secrets.LOGSIGHT_PASSWORD }}
-          application_name: ${{ steps.setup.outputs.application_name }}
+          repository: ${{ steps.setup.outputs.repository }}
           baseline_tag: ${{ github.event.pull_request.base.sha }}
           candidate_tag: ${{ github.event.pull_request.head.sha }}
           risk_threshold: 10
