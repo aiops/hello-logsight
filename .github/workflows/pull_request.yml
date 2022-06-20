@@ -1,4 +1,4 @@
-name: 'Stage Verifier (Pull)'
+name: 'Stage Verifier (Pull).'
 on:
   pull_request_target:
     types: [assigned, opened, synchronize, reopened]
