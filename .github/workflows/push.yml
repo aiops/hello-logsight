@@ -1,8 +1,9 @@
-name: 'logsight.ai Verification'
+name: 'logsight.ai verification'
 on:
   push:
     branches:
       - main
+      - hello_logsight_kafka
 
 jobs:
   deployment_risk:
