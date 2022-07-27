@@ -1,4 +1,4 @@
-name: 'Stage Verifier (Push).'
+name: 'logsight.ai Verification'
 on:
   push:
     branches:
@@ -24,6 +24,7 @@ jobs:
           tag: ${{ github.sha }}
 
       - name: Run Hello Logsight
+        continue-on-error: true
         run: python hello_logsight.py
 
       - name: Verify Logs

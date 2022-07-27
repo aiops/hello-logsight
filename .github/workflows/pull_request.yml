@@ -1,4 +1,4 @@
-name: 'Stage Verifier (Pull).'
+name: 'logsight.ai Verification'
 on:
   pull_request_target:
     types: [assigned, opened, synchronize, reopened]
@@ -30,6 +30,7 @@ jobs:
           ref: "refs/pull/${{ github.event.number }}/merge"
 
       - name: Run Hello Logsight
+        continue-on-error: true
         run: python hello_logsight.py
 
       - uses: actions/checkout@v2
