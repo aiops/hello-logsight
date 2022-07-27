@@ -7,7 +7,6 @@ on:
 
 jobs:
   deployment_risk:
-    if: always()
     runs-on: ubuntu-latest
     steps:
 
@@ -26,6 +25,7 @@ jobs:
           tag: ${{ github.sha }}
 
       - name: Run Hello Logsight
+        continue-on-error: true
         run: python hello_logsight.py
 
       - name: Verify Logs
