@@ -30,7 +30,8 @@ def calculate_total_cost():
     logging.info("Starting calculation of the costs")
     while True:
         entry = db.read_entry()
-        total_cost += int(entry)
+        if entry.isnumeric():
+            total_cost += int(entry)
         if not entry:
             break
     logging.info(f"Total cost of operation is: {total_cost}")
