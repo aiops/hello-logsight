@@ -1,8 +1,9 @@
-name: 'Stage Verifier (Push).'
+name: 'logsight.ai Verification'
 on:
   push:
     branches:
       - main
+      - hello_logsight_kafka
 
 jobs:
   deployment_risk:
